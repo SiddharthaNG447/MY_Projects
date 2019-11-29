@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+h2.ex{
+   background-color:blue;
+   color:white;
+   text-align:center;
+   font-family:serif;
+   font-size:40px;
+}
+
+body {
+  color: red;
+}
+
+</style>
+
+<script>
+function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+  
+	var y=document.forms["myForm"]["lname"].value;
+    if(y == "")
+    	{
+    	alert("Last name be filled out");
+    	return false;
+    	}
+    var z=document.forms["myForm"]["gmail"].value;
+    if(z == "")
+    	{
+    	alert("please fill the valid email Address");
+    	return false;
+    	}
+    var u=document.forms["myForm"]["pass"].value;
+    if(y == "")
+    	{
+    	alert("please enter valid password");
+    	return false;
+    	}
+  
+    
+}
+</script>
+
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body bgcolor="lightblue">
+<h2 class="ex">FacBook Sign Up</h2>
+
+<form name="myForm" onsubmit="return validateForm()" action="Register" method="post">
+<center>
+
+First Name* :<input type="text" name="fname" placeholder="enter your first name"><br/><br/>
+
+Middile Name :<input type="text" name="mname"  placeholder="enter your middle name"><br/><br/>
+ 
+Last Name* :<input type="text" name="lname" placeholder="enter your last name"><br/><br/>
+
+Email Id* :<input type="email" name="gmail" placeholder="enter your email Address"><br/><br/>
+
+PassWord* :<input type="password" name="pass" placeholder="Create a New Password"><br/><br/>
+
+ <pre stle=font-color"silver">
+     By clicking Sign Up, you agree to our <a href="Terms.html">Terms and Conditions</a>You may 
+     Recive sms notification from us at any time.
+     
+  </pre>
+
+<input type="submit" value="Register"><br/><br/>
+</center>
+</form>
+
+
+<center>
+<a href="changepsw.html"><button>click here to change password</button></a>
+</center>
+
+
+
+
+<pre>
+                                              Note : asterix(*) symbol fields are mandatory
+
+</pre>
+<center>
+<a href="login1.html"><button>If Already register pls Login</button></a>
+
+<a href="Authority.html"><button>Developer</button></a>
+</center>
+</body>
+
+
+
+
+</html>
